@@ -5,5 +5,7 @@ void scan(bool debug) {
     IR[i] = (x >= threshhold) ? 1 : 0;
     int b = 2 - i;
     irSensors = irSensors + (IR[i] << b);
+    if (debug) { Serial.print(x);}
   }
+  if (debug) {Serial.println();}
 }

@@ -77,10 +77,6 @@ void checkJunc() {
   if (x != onJunc) {
     flipJuncState();
   }
-  for (int i = 0; i < 3; i++) {
-    //Serial.print(IR[i]);
-    //Serial.print(" :");
-  }
 }
 
 void flipJuncState() {
